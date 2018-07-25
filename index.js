@@ -44,5 +44,5 @@ Promise.all(promesasIncompletas).then((pokemones)=>{
 
 
 app.listen(port, ()=>{
-    console.log('todo bien eres el mejore', `me levante en el puerto ${port}`);
+    console.log(`todo bien eres el mejore`, `me levante en el puerto ${port}`);
 });
