@@ -16,7 +16,7 @@ app.get('/', (req, res)=> {
 
     app.get('/pokemons', (req,res)=> {
 
-        let pokeIds = [1,2,3];
+        let pokeIds = [1,2,3,4, 130, 384];
         let promesasIncompletas = pokeIds.map((id)=> {
        return axios.get(`http://pokeapi.co/api/v2/pokemon/${id}/`)
         .then((response)=>{
