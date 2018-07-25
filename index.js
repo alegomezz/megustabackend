@@ -1,6 +1,8 @@
 let axios = require('axios');
 let app = require('express')();
 
+let port = process.env.PORT || 5000;
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -41,6 +43,6 @@ Promise.all(promesasIncompletas).then((pokemones)=>{
 
 
 
-app.listen(5000, ()=>{
-    console.log('todo bien eres el mejore');
+app.listen(port, ()=>{
+    console.log('todo bien eres el mejore', `me levante en el puerto ${port}`);
 });
